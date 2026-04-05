@@ -1,0 +1,8 @@
+---
+- name: Install node
+  yum:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - nodejs
+    - npm
